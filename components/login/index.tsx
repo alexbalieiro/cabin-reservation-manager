@@ -4,6 +4,7 @@ import Button from "@mui/material/Button";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import VpnKeyOutlinedIcon from "@mui/icons-material/VpnKeyOutlined";
 import { ReactElement } from "react";
+import Paper from "@mui/material/Paper";
 
 const Login = (): ReactElement => {
   return (
@@ -12,32 +13,36 @@ const Login = (): ReactElement => {
       <form className={style.formContainer}>
         <div className={style.inputContainer}>
           <AccountCircleOutlinedIcon />
-          <TextField
-            id="outlined-text-input"
-            label="Usuario"
-            size="small"
-            type="text"
-            fullWidth
-            autoComplete="current-text"
-            style={{ backgroundColor: "white" }}
-          />
+          <Paper elevation={3} sx={{ width: "100%" }}>
+            <TextField
+              id="outlined-text-input"
+              label="Usuario"
+              size="small"
+              type="text"
+              fullWidth
+              autoComplete="current-text"
+            />{" "}
+          </Paper>
         </div>
         <div className={style.inputContainer}>
           <VpnKeyOutlinedIcon />
-          <TextField
-            id="outlined-password-input"
-            label="Contraseña"
-            size="small"
-            type="password"
-            fullWidth
-            autoComplete="current-password"
-            style={{ backgroundColor: "white" }}
-          />
+          <Paper elevation={3} sx={{ width: "100%" }}>
+            <TextField
+              id="outlined-password-input"
+              label="Contraseña"
+              size="small"
+              type="password"
+              fullWidth
+              autoComplete="current-password"
+            />
+          </Paper>
         </div>
         <div className={style.buttonContainer}>
-          <Button variant="contained" size="large">
-            INGRESAR
-          </Button>
+          <Paper elevation={3}>
+            <Button variant="contained" size="large">
+              INGRESAR
+            </Button>
+          </Paper>
         </div>
       </form>
     </div>
