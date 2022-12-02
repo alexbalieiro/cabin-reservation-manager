@@ -1,5 +1,5 @@
 const ReservePage = () => {
-  return <div>Reserve Page</div>;
+  return <main>Reserve Page</main>;
 };
 
 export default ReservePage;

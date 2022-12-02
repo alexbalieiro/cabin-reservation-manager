@@ -8,7 +8,7 @@ import Paper from "@mui/material/Paper";
 
 const Login = (): ReactElement => {
   return (
-    <div className={style.container}>
+    <section className={style.container}>
       <h1 className={style.title}>LOGIN</h1>
       <form className={style.formContainer}>
         <div className={style.inputContainer}>
@@ -45,7 +45,7 @@ const Login = (): ReactElement => {
           </Paper>
         </div>
       </form>
-    </div>
+    </section>
   );
 };
 

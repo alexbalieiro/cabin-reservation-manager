@@ -3,9 +3,9 @@ import Login from "../../components/login/index";
 
 const LoginPage = () => {
   return (
-    <div className={style.container}>
+    <main className={style.container}>
       <Login />
-    </div>
+    </main>
   );
 };
 
