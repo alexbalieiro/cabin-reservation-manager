@@ -1,10 +1,11 @@
 import style from "../login/index.module.css";
-import Login from "../../components/login/index";
+import FormUI from "../../components/formUI";
 
 const LoginPage = () => {
   return (
     <main className={style.container}>
-      <Login />
+      <h1 style={{ textAlign: "center", fontSize: "40px" }}>Acceso</h1>
+      <FormUI />
     </main>
   );
 };
